@@ -24,7 +24,7 @@ def globalVersion = new Version(currentVersion)
 allprojects {
  
   repositories {
-    maven { url "https://nexus.opendaylight.org/content/groups/public/" }
+     maven { url "http://nexus.opendaylight.org/content/groups/public/" }
      mavenLocal()
  }
 
