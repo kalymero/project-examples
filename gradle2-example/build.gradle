@@ -22,6 +22,12 @@ import java.text.SimpleDateFormat
 def globalVersion = new Version(currentVersion)
 
 allprojects {
+ 
+  repositories {
+    maven { url "https://nexus.opendaylight.org/content/groups/public/" }
+     mavenLocal()
+ }
+
   apply plugin: 'idea'
   configure(subprojects.findAll { new File(it.projectDir, 'src').directory }) {
     apply plugin: 'java'
