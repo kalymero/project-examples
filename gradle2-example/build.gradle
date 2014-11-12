@@ -13,6 +13,8 @@ buildscript {
             repositories {
             		jcenter()
             		mavenCentral()
+            		maven { url "http://repo.maven.apache.org/maven2" }
+			maven { url "http://nexus.opendaylight.org/content/repositories/opendaylight.release/" }
 			mavenLocal()
          }
 }
